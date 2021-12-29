@@ -1,11 +1,12 @@
+import UsersList from 'components/UsersList/UsersList';
 import React from 'react';
 
-const App = () => {
+const Root = () => {
   return (
-    <div>
-      <h1>apka</h1>
-    </div>
+    <>
+      <UsersList />
+    </>
   );
 };
 
-export default App;
+export default Root;
