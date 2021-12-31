@@ -1,20 +1,12 @@
 import styled from 'styled-components';
 
-export const StyledButton = styled.button`
-  display: grid;
-  place-items: center;
-  width: 20px;
-  height: 20px;
-  background-color: ${({ theme: { colors } }) => colors.grey};
-  border-radius: 50%;
+export const Button = styled.button`
+  padding: 4px 20px;
+  font-size: ${({ theme }) => theme.fontSize.m};
+  font-weight: 700;
+  background-color: ${({ theme }) => theme.colors.lightPurple};
+  color: ${({ theme }) => theme.colors.darkGrey};
   border: none;
-  color: ${({ theme: { colors } }) => colors.white};
-  margin-right: 10px;
-  cursor: pointer;
-
-  svg {
-    width: 100%;
-    height: 100%;
-    margin-top: 2px;
-  }
+  border-radius: 20px;
+  margin: 10px 0;
 `;
